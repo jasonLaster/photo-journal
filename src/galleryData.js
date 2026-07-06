@@ -167,5 +167,112 @@ export const sections = [
         "tone": "green"
       }
     ]
+  },
+  {
+    "id": "petaluma-farm",
+    "title": "Petaluma Farm",
+    "range": "Sep 12, 2025 - Sep 14, 2025",
+    "note": "#animals #family #nature",
+    "tags": [
+      "animals",
+      "family",
+      "nature"
+    ],
+    "photos": [
+      {
+        "src": "/photos/petaluma-farm/2025-09-12-brother-and-sister-goats--nature--animals.jpeg",
+        "width": 2364,
+        "height": 1330,
+        "alt": "Brother And Sister Goats",
+        "title": "Brother And Sister Goats",
+        "tags": [
+          "nature",
+          "animals"
+        ],
+        "date": "2025-09-12",
+        "dateLabel": "Sep 12, 2025",
+        "tone": "blue"
+      },
+      {
+        "src": "/photos/petaluma-farm/2025-09-12-lavendar-in-the-garden--nature.jpeg",
+        "width": 638,
+        "height": 360,
+        "alt": "Lavendar In The Garden",
+        "title": "Lavendar In The Garden",
+        "tags": [
+          "nature"
+        ],
+        "date": "2025-09-12",
+        "dateLabel": "Sep 12, 2025",
+        "tone": "green"
+      },
+      {
+        "src": "/photos/petaluma-farm/2025-09-12-walle-magestical-pose--family.jpeg",
+        "width": 2364,
+        "height": 1330,
+        "alt": "Walle Magestical Pose",
+        "title": "Walle Magestical Pose",
+        "tags": [
+          "family"
+        ],
+        "date": "2025-09-12",
+        "dateLabel": "Sep 12, 2025",
+        "tone": "soft"
+      },
+      {
+        "src": "/photos/petaluma-farm/2025-09-13--fenced-in-goats--nature.jpeg",
+        "width": 1182,
+        "height": 665,
+        "alt": "Fenced In Goats",
+        "title": "Fenced In Goats",
+        "tags": [
+          "nature"
+        ],
+        "date": "2025-09-13",
+        "dateLabel": "Sep 13, 2025",
+        "tone": "green"
+      },
+      {
+        "src": "/photos/petaluma-farm/2025-09-13-goat-behind-fence--nature--animals.jpeg",
+        "width": 2364,
+        "height": 1330,
+        "alt": "Goat Behind Fence",
+        "title": "Goat Behind Fence",
+        "tags": [
+          "nature",
+          "animals"
+        ],
+        "date": "2025-09-13",
+        "dateLabel": "Sep 13, 2025",
+        "tone": "blue"
+      },
+      {
+        "src": "/photos/petaluma-farm/2025-09-13-goat-saying-hellow--nature--animals.jpeg",
+        "width": 1182,
+        "height": 665,
+        "alt": "Goat Saying Hellow",
+        "title": "Goat Saying Hellow",
+        "tags": [
+          "nature",
+          "animals"
+        ],
+        "date": "2025-09-13",
+        "dateLabel": "Sep 13, 2025",
+        "tone": "blue"
+      },
+      {
+        "src": "/photos/petaluma-farm/2025-09-14-skyward-pink%20bottlebrush--nature.jpeg",
+        "width": 638,
+        "height": 360,
+        "alt": "Skyward Pink Bottlebrush",
+        "title": "Skyward Pink Bottlebrush",
+        "tags": [
+          "nature"
+        ],
+        "date": "2025-09-14",
+        "dateLabel": "Sep 14, 2025",
+        "tone": "green"
+      }
+    ]
   }
 ];

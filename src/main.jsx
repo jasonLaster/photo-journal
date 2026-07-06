@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Maximize2 } from "lucide-react";
 import { MasonryPhotoAlbum } from "react-photo-album";
@@ -26,6 +26,34 @@ function App() {
       }))
       .filter((section) => section.photos.length > 0);
   }, [activeTag]);
+
+  useEffect(() => {
+    const sentinels = Array.from(document.querySelectorAll("[data-sticky-sentinel]"));
+
+    const updateStickyState = () => {
+      for (const sentinel of sentinels) {
+        const section = sentinel.parentElement;
+        const header = sentinel.nextElementSibling;
+
+        if (!section || !header?.classList.contains("section-header")) continue;
+
+        const sectionRect = section.getBoundingClientRect();
+        const headerRect = header.getBoundingClientRect();
+        const isStuck = headerRect.top <= 0 && sectionRect.top < 0 && sectionRect.bottom > headerRect.height;
+
+        header.classList.toggle("is-stuck", isStuck);
+      }
+    };
+
+    updateStickyState();
+    window.addEventListener("scroll", updateStickyState, { passive: true });
+    window.addEventListener("resize", updateStickyState);
+
+    return () => {
+      window.removeEventListener("scroll", updateStickyState);
+      window.removeEventListener("resize", updateStickyState);
+    };
+  }, [visibleSections]);
 
   const activeSlides =
     lightbox?.photos.map((item) => ({
@@ -65,6 +93,7 @@ function App() {
 function PhotoSection({ section, activeTag, onTagChange, onOpen }) {
   return (
     <section className="photo-section" id={section.id} aria-labelledby={`${section.id}-title`}>
+      <div className="sticky-sentinel" data-sticky-sentinel aria-hidden="true" />
       <div className="section-header">
         <div>
           <h2 id={`${section.id}-title`}>{section.title}</h2>
