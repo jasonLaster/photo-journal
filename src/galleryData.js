@@ -3,7 +3,7 @@ export const sections = [
   {
     "id": "cloverdale-campsite",
     "title": "Cloverdale Campsite",
-    "range": "Jul 4, 2026 - Jul 4, 2027",
+    "range": "Jul 4, 2026",
     "note": "#nature",
     "tags": [
       "nature"
@@ -15,6 +15,19 @@ export const sections = [
         "height": 1024,
         "alt": "Artichoke In Bloom",
         "title": "Artichoke In Bloom",
+        "tags": [
+          "nature"
+        ],
+        "date": "2026-07-04",
+        "dateLabel": "Jul 4, 2026",
+        "tone": "green"
+      },
+      {
+        "src": "/photos/cloverdale-campsite/2026-07-04-campsite-grill--nature.jpeg",
+        "width": 1182,
+        "height": 665,
+        "alt": "Campsite Grill",
+        "title": "Campsite Grill",
         "tags": [
           "nature"
         ],
@@ -46,19 +59,6 @@ export const sections = [
         ],
         "date": "2026-07-04",
         "dateLabel": "Jul 4, 2026",
-        "tone": "green"
-      },
-      {
-        "src": "/photos/cloverdale-campsite/2027-07-04-campsite-grill--nature.jpeg",
-        "width": 1182,
-        "height": 665,
-        "alt": "Campsite Grill",
-        "title": "Campsite Grill",
-        "tags": [
-          "nature"
-        ],
-        "date": "2027-07-04",
-        "dateLabel": "Jul 4, 2027",
         "tone": "green"
       }
     ]
